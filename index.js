@@ -11,8 +11,7 @@ chart2 = new TCharts.Chart("c2", {
   title: "Chart 2",
   data: chartsData[1],
   scroll: 0.2,
-  scale: 5,
-  dark: true
+  scale: 5
 })
 
 chart3 = new TCharts.Chart("c3", {
@@ -27,8 +26,7 @@ chart4 = new TCharts.Chart("c4", {
   title: "Chart 4",
   data: chartsData[3],
   scroll: 0,
-  scale: 3,
-  dark: true
+  scale: 3
 })
 
 chart5 = new TCharts.Chart("c5", {
