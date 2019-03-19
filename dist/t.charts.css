@@ -1,0 +1,231 @@
+.t.charts{
+  font-family: Arial, sans-serif;
+}
+
+.t.charts.container{
+  background-color: #fff;
+}
+
+.t.charts svg{
+  height: 100%;
+  width: 100%;
+}
+
+.t.charts.sheet{
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  width: 100%;
+}
+
+.t.charts.sheet .info{
+  box-shadow: 1px 1px 3px #aaa;
+  border: 1px solid #e8e9eb;
+  background-color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  overflow: hidden;
+  max-width: 40%;
+  padding: 10px;
+  top: 10px;
+}
+
+.t.charts.xAxis{
+  border-top: 1px solid #e8e9eb;
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
+  padding-top: 5px;
+  display: flex;
+  height: 20px;
+  width: 100%;
+}
+
+.t.charts.xAxis .label{
+  background-color: #fff;
+  position: absolute;
+  white-space:nowrap;
+  overflow: hidden;
+  padding-top: 5px;
+  font-size: 14px;
+  color: #a2a9ab;
+  flex: none;
+  top: 0px;
+}
+
+.t.charts.xAxis .label:before{
+  border: 1px solid #e8e9eb;
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0px;
+  left: 0px;
+  top: 0px;
+}
+
+.t.charts .yAxis.label{
+  font-size: 14px;
+  fill: #a2a9ab;
+}
+
+.t.charts.preview{
+  align-content: space-between;
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+  display: flex;
+  height: 50px;
+  width: 100%;
+}
+
+.t.charts.preview svg{
+  pointer-events:none;
+  position: absolute;
+  z-index: 1;
+}
+
+
+.t.charts.preview .window{
+  border-bottom: 2px solid #dde7f0;
+  border-top: 2px solid #dde7f0;
+  display: inline-block;
+  position: relative;
+  min-width: 15px;
+  max-width: 100%;
+  flex: none;
+  z-index: 0;
+}
+
+.t.charts.preview .overlay{
+  background-color: #f1f5f9;
+  display: inline-block;
+  opacity: 0.7;
+  flex: none;
+  z-index: 2;
+}
+
+.t.charts.preview .handler{
+  background-color: #dde7f0;
+  position: absolute;
+  height: 100%;
+  width: 10px;
+}
+
+.t.charts.preview .handler.left{
+  left: 0px;
+}
+
+.t.charts.preview .handler.right{
+  right: 0px;
+}
+
+.t.charts.legend{
+  margin-top: 20px;
+  display: flex;
+}
+
+.t.charts.legend .item{
+  border: 1px solid #e8eced;
+  border-radius: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  min-width: 40px;
+  display: flex;
+  padding: 10px;
+}
+
+.t.charts.legend .label{
+  color: #333;
+}
+
+.t.charts.legend .checkbox{
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 16px;
+  border: 2px solid;
+  color: #fff;
+  height: 16px;
+  width: 16px;
+}
+.t.charts.sheet .info .values .value .number{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.t.charts.sheet .info .values .value .name{
+  font-size: 12px;
+}
+
+.t.charts.sheet .info .values .value{
+  margin: 5px 10px 0px 0px;
+}
+
+.t.charts.sheet .info .values{
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.t.charts .cursor.circle{
+  fill: #fff;
+}
+
+.t.charts .grid.line{
+  stroke: #e8e9eb;
+}
+
+.t.charts.container.dark{
+  background-color: #242f3e;
+  color: #fff;
+}
+
+.t.charts.container.dark .sheet .info{
+  box-shadow: 1px 1px 3px #000;
+  background-color: #253241;
+  border-color: #253241;
+}
+
+.t.charts.dark .xAxis{
+  border-top: 1px solid #3b4a5a;
+}
+
+.t.charts.dark .xAxis .label{
+  background-color: #242f3e;
+  color: #546778;
+}
+
+.t.charts.dark .xAxis .label:before{
+  border-color: #3b4a5a;
+}
+
+.t.charts.dark .yAxis.label{
+  fill: #546778;
+}
+
+.t.charts.dark .preview .window{
+  border-color: #40566b;
+}
+
+.t.charts.dark .preview .overlay{
+  background-color: #1f2a38;
+}
+
+.t.charts.dark .preview .handler{
+  background-color: #40566b;
+}
+
+.t.charts.dark .legend .item{
+ border-color: #344658;
+}
+
+.t.charts.dark .legend .label{
+  color: #fff;
+}
+
+.t.charts.dark .cursor.circle{
+  fill: #242f3e;
+}
+
+.t.charts.dark .grid.line{
+  stroke: #3b4a5a;
+}

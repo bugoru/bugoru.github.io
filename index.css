@@ -1,0 +1,24 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eee;
+}
+
+.chartContainer{
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  background-color: #fff;
+  margin: 10px;
+}
+
+.actions{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.actions a{
+  color: #000;
+}
