@@ -71,6 +71,7 @@
 .t.charts.preview{
   align-content: space-between;
   position: relative;
+  touch-action: none;
   overflow: hidden;
   margin-top: 10px;
   display: flex;
